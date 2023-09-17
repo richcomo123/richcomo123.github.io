@@ -10,41 +10,101 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffcc; /* Light yellow background */
+      background-color: #1b3826; /* Light gray background */
+      color: #DEB342; /* Dark gray text color */
     }
 
     /* Style the header section */
     header {
-      background-color: #0055b3; /* Dark blue background */
-      color: #fff;
-      padding: 10px 0;
+      background-color: #1b3825; /* Bright blue background */
+      color: #DEB342;
+      padding: 20px 0;
+      text-align: center;
     }
 
     /* Style the main content section */
     main {
       padding: 20px;
+      text-align: center;
     }
 
-    /* Style the footer section */
-    footer {
-      background-color: #0055b3; /* Dark blue background */
-      color: #fff;
-      padding: 10px 0;
+    /* Style the header h1 and logo */
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* Style the main h2 */
+    main h2 {
+      font-size: 24px;
+    }
+
+    /* Style the unordered list with custom bullets */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li:before {
+      content: "\2022"; /* Bullet character (•) */
+      color: #636530; /* Bright blue bullet color */
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    /* Style the contact information block */
+    .contact-info {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #636530;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style links */
+    a {
+      color:#DEB342; /* Bright blue link color */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Afriyie Group</h1>
+    <img src="../images/business-logo.jpeg" alt=" Logo">
+    <h1>Afriyie Group</h1>
   </header>
   <main>
-    <p>We offer innovative solutions for your business needs.</p>
-    <p>Contact us for more information.</p>
+    <h2>Our Services</h2>
+    <p>We offer innovative solutions for your design, consulting, and development needs.</p>
+    <ul>
+      <li>Unique and Creative Designs</li>
+      <li>Expert Consulting Services</li>
+      <li>Cutting-Edge Web Development</li>
+      <li>Responsive Mobile Apps</li>
+      <li>User-Friendly Interfaces</li>
+    </ul>
+    <p>At Your Afriyie Group, we are committed to exceeding your expectations. Contact us today to discuss how we can turn your vision into reality.</p>
+    <div class="contact-info">
+      <h3>Contact Information:</h3>
+      <p>Email: info@afriyiegroup.net</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Main Street, Cityville</p>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2023 Afriyie Group</p>
-  </footer>
 </body>
 </html>
-
-

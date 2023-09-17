@@ -9,6 +9,46 @@ p{
   font-family: verdana;
   font-size: 20px;
 }
-a{
-  color:blueviolet;
+  /* Define the link color */
+  a {
+    color: darkgreen;
+  }
+
+  /* Define the link hover color (optional) */
+  a:hover {
+    color: green; /* You can adjust this color for hover effect */
+  }
+
+
+  /* Style for the main navigation links */
+/* Style for the main navigation links */
+/* Style for the main navigation links */
+/* Style for the main navigation links */
+nav {
+  text-align: left;
+  margin-top: 20px;
 }
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: darkgreen; /* Match the link color */
+  font-weight: bold;
+  transition: color 0.3s; /* Add transition for color change */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  color: green; /* Match the hover color */
+}
+
+/* Override text-align for the second nav */
+nav:nth-child(3) {
+  text-align: left;
+  margin-top: 10px; /* Adjust the margin for spacing */
+}
+
+
+
+
+
