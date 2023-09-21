@@ -50,7 +50,12 @@ nav:nth-child(3) {
 
 /* Style for all footer elements on the page */
 
+footer img {
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: right;
 
+}
 
 
 
