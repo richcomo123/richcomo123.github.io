@@ -1,45 +1,45 @@
-body{
-  background-color:#ffef00;
+body {
+  background-color: #ffef00;
+  margin: 10px; /* Adjust margin for small devices */
 }
-h1{
-  color:#0010ff;
-  text-align:center;
+
+h1 {
+  color: #0010ff;
+  text-align: center;
 }
-p{
+
+p {
   font-family: verdana;
   font-size: 20px;
 }
-  /* Define the link color */
-  a {
-    color: darkgreen;
-  }
 
-  /* Define the link hover color (optional) */
-  a:hover {
-    color: green; /* You can adjust this color for hover effect */
-  }
+/* Define the link color */
+a {
+  color: darkgreen;
+  text-decoration: none; /* Remove default underline on links */
+  transition: color 0.3s; /* Add transition for color change */
+}
 
+/* Define the link hover color */
+a:hover {
+  color: green;
+}
 
-  /* Style for the main navigation links */
-/* Style for the main navigation links */
-/* Style for the main navigation links */
 /* Style for the main navigation links */
 nav {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 10px; /* Adjust margin for small devices */
 }
 
 nav a {
-  text-decoration: none;
   padding: 10px 20px;
-  color: darkgreen; /* Match the link color */
+  color: darkgreen;
   font-weight: bold;
-  transition: color 0.3s; /* Add transition for color change */
 }
 
 /* Hover effect for navigation links */
 nav a:hover {
-  color: green; /* Match the hover color */
+  color: green;
 }
 
 /* Override text-align for the second nav */
@@ -49,15 +49,15 @@ nav:nth-child(3) {
 }
 
 /* Style for all footer elements on the page */
-
 footer img {
   margin-top: 10px;
   margin-right: 10px;
-  vertical-align: right;
-
+  vertical-align: middle; /* Adjusted to 'middle' for proper alignment */
 }
 
-
-
-
-
+/* Responsive image sizing for small devices */
+@media (min-width: 576px) {
+  img {
+    max-width: 100%; /* Images will scale down to fit the screen width */
+  }
+}
