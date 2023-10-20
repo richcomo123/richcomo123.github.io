@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richmond Afriyie || Remarkable Anaconda || ITIS 3135 || Calculator</title>
+  <link rel="stylesheet" href="styles/default.css">
+
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <div id="calculator">
+      <input type="text" id="display" value="0">
+      <div id="buttons">
+          <button onclick="showAlert('1')">1</button>
+          <button onclick="showAlert('2')">2</button>
+          <button onclick="showAlert('3')">3</button>
+          <button onclick="showAlert('+')">+</button>
+          <button onclick="showAlert('4')">4</button>
+          <button onclick="showAlert('5')">5</button>
+          <button onclick="showAlert('6')">6</button>
+          <button onclick="showAlert('-')">-</button>
+          <button onclick="showAlert('7')">7</button>
+          <button onclick="showAlert('8')">8</button>
+          <button onclick="showAlert('9')">9</button>
+          <button onclick="showAlert('*')">*</button>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="showAlert('0')">0</button>
+          <button onclick="showAlert('=')">=</button>
+          <button onclick="showAlert('/')">/</button>
+      </div>
+  </div>
+
+  </main>
+  <script src="scripts/calculator_try.js"></script>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
+

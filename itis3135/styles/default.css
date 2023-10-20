@@ -1,10 +1,10 @@
 body {
   background-color: #ffef00;
-  margin: 10px; /* Adjust margin for small devices */
+  margin: 10px;
 }
 
 h1 {
-  color: #0010ff;
+  color: purple;
   text-align: center;
 }
 
@@ -15,49 +15,71 @@ p {
 
 /* Define the link color */
 a {
-  color: darkgreen;
-  text-decoration: none; /* Remove default underline on links */
-  transition: color 0.3s; /* Add transition for color change */
+  color: purple;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 /* Define the link hover color */
 a:hover {
-  color: green;
+  color: violet;
 }
 
-/* Style for the main navigation links */
-nav {
-  text-align: left;
-  margin-top: 10px; /* Adjust margin for small devices */
+/* Dropdown Styles */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-nav a {
-  padding: 10px 20px;
-  color: darkgreen;
-  font-weight: bold;
+.nav-category {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
-/* Hover effect for navigation links */
-nav a:hover {
-  color: green;
+.nav-category:hover .dropdown {
+  display: block;
 }
 
-/* Override text-align for the second nav */
-nav:nth-child(3) {
-  text-align: left;
-  margin-top: 10px; /* Adjust the margin for spacing */
+.nav-category h3 {
+  color: purple;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-category h3:hover {
+  color: violet;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
 }
 
 /* Style for all footer elements on the page */
 footer img {
   margin-top: 10px;
   margin-right: 10px;
-  vertical-align: middle; /* Adjusted to 'middle' for proper alignment */
+  vertical-align: middle;
 }
 
 /* Responsive image sizing for small devices */
-@media (min-width: 576px) {
+@media (max-width: 575px) {
   img {
-    max-width: 100%; /* Images will scale down to fit the screen width */
+    max-width: 100%;
   }
+}
+
+footer a:hover, header a:hover {
+  color: violet;
 }
